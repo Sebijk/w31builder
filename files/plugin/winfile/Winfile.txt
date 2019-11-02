@@ -1,0 +1,2 @@
+http://www.microsoft.com/downloads/details.aspx?FamilyID=3581784e-2c80-4251-a23f-52d8d1710927&DisplayLang=de (Deutsch)
+http://www.conradshome.com/win31/files/wgfmdll.exe (DLL-Dateien für Datei-Manager)

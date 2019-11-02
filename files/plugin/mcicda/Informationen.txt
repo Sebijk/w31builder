@@ -1,0 +1,3 @@
+MCICDA.DRV
+
+ftp://ftp.microsoft.com/softlib/mslfiles/MCICDA.EXE herunterladen und MCICDA.DRV entpacken.

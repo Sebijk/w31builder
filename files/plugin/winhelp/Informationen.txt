@@ -1,0 +1,5 @@
+Windows-Hilfe Plugin
+
+Dieses Plugin fügt die 16-bit Windows-Hilfe hinzu. Da die 16-bit Hilfe Bestandteil von Windows 
+3.1x ist müssen Sie die Datei "Winhelp.exe" von Windows 3.1/3.11 holen. Die 16-bit Hilfe gibt es 
+auch in den 32-Bit NT-Systemen Windows NT/2000/XP/Vista/7/8/8.1 sowie Windows 10. Kopieren Sie die Datei "winhelp.exe" von eurem  Windows-Verzeichnis und fügen Sie es hier ein. Die Datei "winhelp.exe" von Windows 95/98/Me ist dagegen nutzlos, weil es eine 32-bit Hilfe aufruft. Falls Sie 16-Bit Hilfedateien haben, also 16 Bit Hlp-Dateien, fügen Sie es hier ein.

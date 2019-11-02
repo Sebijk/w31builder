@@ -1,0 +1,16 @@
+Version 0.05
+
+ - Winfile.exe wird nun im Rootverzeichnis des mini31-Ordner gepackt (vorher unter syswin)
+ - Kleinere Fehler mit "getplugins.vbs" behoben
+ - 4unzip hinzugefügt
+ - CD-ROM-Laufwerken werden nun besser erkannt
+ - Unzip32.exe aktualisiert
+ - Setup: Benutzerrechte unter Vista und 7 werden nun zugewiesen
+ 
+Version 0.04
+
+ - Ein Fehler mit Endung .inf bei Mini-Windows 31 behoben
+ - Es werden nun mehrere Mirrors verwendet, falls eine Site nicht erreichbar ist
+ - Windows 3.1-Hilfe (winhelp.exe) wird nun automatisch via "getplugins.vbs" vom
+   Windows-Verzeichnis ins Pluginverzeichnis kopiert, wenn das laufende Betriebsystem
+   ein NT/2000/XP/2003 oder Vista ist.

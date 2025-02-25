@@ -20,14 +20,13 @@ if drop.count=0 then
 		
 		'Rechner
 		if not MyFiles.FileExists(plugin & "\calc\calc.exe") then
-			MyShell.Run wget & "\wget ftp://ftp.microsoft.com/Softlib/MSLFILES/WW1138.EXE --directory-prefix=" & plugin & "\calc",,true
-			if not MyFiles.FileExists(plugin & "\calc\WW1138.EXE") then MyShell.Run wget & "\wget http://download.microsoft.com/download/win95upg/update/6/w95/en-us/ww1138.exe --directory-prefix=" & plugin & "\calc",,true
+			if not MyFiles.FileExists(plugin & "\calc\WW1138.EXE") then MyShell.Run wget & "\wget https://web.archive.org/web/20070119165703/https://download.microsoft.com/download/win95upg/update/6/w95/en-us/ww1138.exe --directory-prefix=" & plugin & "\calc",,true
 			if not MyFiles.FileExists(plugin & "\calc\WW1138.EXE") then MyShell.Run wget & "\wget http://downloads.sebijk.com/win31/ww1138.exe --directory-prefix=" & plugin & "\calc",,true
 		End if
 		
 		'CD-Audiotreiber
 		if not MyFiles.FileExists(plugin & "\mcicda\mcicda.drv") then
-			MyShell.Run wget & "\wget ftp://ftp.microsoft.com/softlib/mslfiles/MCICDA.EXE --directory-prefix=" & plugin & "\mcicda",,true
+			MyShell.Run wget & "\wget http://cwcyrix.nsupdate.info/ftp-archives/ftp.microsoft.com/Softlib/MSLFILES/MCICDA.EXE --directory-prefix=" & plugin & "\mcicda",,true
 			if not MyFiles.FileExists(plugin & "\mcicda\MCICDA.EXE") then MyShell.Run wget & "\wget http://downloads.sebijk.com/win31/mcicda.exe --directory-prefix=" & plugin & "\mcicda",,true
 		End if
 		
@@ -35,7 +34,7 @@ if drop.count=0 then
 		if not MyFiles.FileExists(plugin & "\msdos\msdos.exe") then
 			Set w31sjBatch = Myfiles.OpenTextFile( temp & "\w31builder.bat", 2, True)
 			w31sjbatch.Writeline "@echo off"
-			w31sjbatch.Writeline wget & "\wget http://oldfiles.org.uk/powerload/download/msexe.exe --directory-prefix=" & plugin & "\msdos"
+			w31sjbatch.Writeline wget & "\wget https://web.archive.org/web/20051215122706/http://oldfiles.org.uk/powerload/download/msexe.exe --directory-prefix=" & plugin & "\msdos"
 			w31sjbatch.Writeline "cd " & plugin & "\msdos"
 			w31sjbatch.Writeline "echo Bitte best„tigen Sie es mit ""y""."
 			w31sjbatch.Writeline "echo Das Programm wird in das Pluginverzeichnis entpackt."
@@ -69,7 +68,7 @@ if drop.count=0 then
 		w31sjbatch.Writeline "if exist calc.exe cd ..\.."
 		w31sjbatch.Writeline "if exist " & plugin & "\calc\WW1138.EXE del " & plugin & "\calc\WW1138.EXE"
 		'W31Key
-		w31sjbatch.Writeline "if not exist " & plugin & "\w31key\w31key.exe " & wget & "\wget http://www.bihler-online.de/freeware/download/w31key.zip --directory-prefix=" & plugin & "\w31key"
+		w31sjbatch.Writeline "if not exist " & plugin & "\w31key\w31key.exe " & wget & "\wget https://web.archive.org/web/20060624114425/http://www.bihler-online.de/freeware/download/w31key.zip --directory-prefix=" & plugin & "\w31key"
 		w31sjbatch.Writeline "if not exist " & plugin & "\w31key\w31key.exe unzip32 -o " & plugin & "\w31key\w31key.zip -d " & plugin & "\w31key"
 		w31sjbatch.Writeline "if exist " & plugin & "\w31key\w31key.exe del " & plugin & "\w31key\w31key.zip"
 		'CD-Audiotreiber
